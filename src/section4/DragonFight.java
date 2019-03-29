@@ -29,12 +29,18 @@ public class DragonFight {
 		dragonHealth=dragonHealth-playerDamage;
 		JOptionPane.showMessageDialog(null, "Your pokeball delt " +playerDamage+ " damage!");
 		JOptionPane.showMessageDialog(null,"The dragon has " +dragonHealth+ " health left.");
+		dragonDamage=gen.nextInt(21);
+		playerHealth=playerHealth-dragonDamage;
+		JOptionPane.showMessageDialog(null,"You have " +playerHealth+ " health left.");
 	}
 	if(attack.equals("shout")) {
 		playerDamage=gen.nextInt(26);
 		dragonHealth=dragonHealth-playerDamage;
 	JOptionPane.showMessageDialog(null, "Your shout delt " +playerDamage+ " damage!");
 	JOptionPane.showMessageDialog(null,"The dragon has " +dragonHealth+ " health left.");
+	dragonDamage=gen.nextInt(21);
+	playerHealth=playerHealth-dragonDamage;
+	JOptionPane.showMessageDialog(null,"You have " +playerHealth+ " health left.");
 	}
 	}
 		
